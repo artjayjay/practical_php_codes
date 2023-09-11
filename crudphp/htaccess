@@ -1,0 +1,9 @@
+
+# # HTID:18121909: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+# php_value display_errors 1
+# # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:18121909:
+# Options -Indexes
+
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
